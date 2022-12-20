@@ -1,1 +1,1 @@
-# wassup
+theme: minima
