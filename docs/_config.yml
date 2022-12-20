@@ -28,7 +28,7 @@ twitter_username:
 github_username:  adityadwarkesh
 
 # Build settings
-remote_theme: midnight
+theme: minima
 plugins:
   - jekyll-feed
 
