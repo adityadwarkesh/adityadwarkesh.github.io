@@ -28,7 +28,7 @@ twitter_username:
 github_username:  adityadwarkesh
 
 # Build settings
-theme: cayman
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
