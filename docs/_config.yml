@@ -20,20 +20,18 @@
 
 title: Aditya Dwarkesh
 email: aditya.dwarkesh@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: # this means to ignore newlines until "baseurl:"
  My website.
 baseurl: ""  # the subpath of your site, e.g. /blog
 url: https://adityadwarkesh.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  adityadwarkesh
 
 # Build settings
 remote_theme: agency-jekyll-theme
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
- markdown: kramdown
- permalink: pretty
+markdown: kramdown
+permalink: pretty
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
