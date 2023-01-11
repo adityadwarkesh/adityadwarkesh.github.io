@@ -27,7 +27,7 @@ url: "https://adityadwarkesh.github.io/" # the base hostname & protocol for your
 markdown: kramdown
 
 # Build settings
-remote_theme: y7kim/agency-jekyll-theme
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
