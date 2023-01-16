@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Hello"
 date:   2022-12-20 19:26:41 +0530
 categories: jekyll update
