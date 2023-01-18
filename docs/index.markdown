@@ -10,6 +10,7 @@ layout: default
           for the help, I will introduce you to Terry Tao in the future.</p>
       
         <a href="https://adityadwarkesh.github.io/notes/">Click here</a>      
+        
         <h2>List of items because why not</h2>
         <ul>
             <li>Item 1</li>
