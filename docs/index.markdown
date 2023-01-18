@@ -4,3 +4,17 @@
 
 layout: default
 ---
+ <h1>Hewwo.</h1>
+        <p>Welcome to my site. This was produced totally as a benevolent gesture by my dear friend Isha fuelled by rage against the machine that is my laptop (haha geddit)
+          and with some invaluable inputs from my side (I told her which theme I wanted and then made a really cute puppy face that was hard to say no to). Anyway thanks mommy
+          for the help, I will introduce you to Terry Tao in the future.</p>
+      
+        <a href="https://adityadwarkesh.github.io/notes/">Click here</a>      
+        <h2>List of items because why not</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
