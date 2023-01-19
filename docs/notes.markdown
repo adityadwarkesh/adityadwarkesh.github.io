@@ -2,6 +2,4 @@
 
 ## Expository Articles
 
-*yay*
-
 # h
