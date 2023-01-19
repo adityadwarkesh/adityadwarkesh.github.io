@@ -1,3 +1,2 @@
-  # Aditya Dwarkesh
----
-## Expository Articles
+
+# Expository Articles
