@@ -1,2 +1,0 @@
-# Aditya Dwarkesh
-## **Expository Articles**
