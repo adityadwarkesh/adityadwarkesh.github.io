@@ -1,3 +1,1 @@
-layout: default
-title: "notes"
-permalink: 
+# H1 **Expository Articles**
