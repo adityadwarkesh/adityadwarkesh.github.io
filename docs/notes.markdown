@@ -2,6 +2,6 @@
 
 ## Expository Articles
 
-_yay_
+*yay*
 
 #h
