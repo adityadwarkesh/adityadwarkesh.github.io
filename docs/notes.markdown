@@ -1,3 +1,0 @@
-# Expository Articles 
-
-## H 
