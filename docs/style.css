@@ -1,0 +1,120 @@
+/* Define colors and fonts */
+@violetness: #7E4386;
+@dark-gray: #252525;
+@med-gray: #333333;
+@light-gray: #444444;
+@lighter-gray: #B8BCBB;
+@white: #ffffff;
+@open-sans: 'Open Sans', Helvetica, Arial, Verdana, sans-serif;
+
+/**
+ * SET COLORS AND FONTS
+ */
+@border-color: @dark-gray;
+@label-font: @open-sans;
+@label-color: @white;
+@label-color-hover: @white;
+@label-background: @med-gray;
+@label-background-hover: @light-gray;
+@label-size: 19px;
+@content-font: @open-sans;
+@content-color: @light-gray;
+@content-background: @white;
+@content-size: 19px;
+
+/**
+* IGNORE: just centering and font pretty-ing
+*/
+body { font-family: 'Open Sans', Helvetica, Arial, Verdana, sans-serif; font-weight: 200; } ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, input, section { font-weight: 200; } 
+#content { width: 75%; position: relative; left: 125px; height: 100%; }
+
+/**
+ * Define Accordion outside elements 
+ *
+*/
+.ac-container {
+	width: 600px;
+  overflow: hidden;
+	margin: 10px auto 30px auto;
+  color: @content-color;
+  background: @border-color;
+  padding: 10px;
+	text-align: left;
+}
+.ac-container label{ 
+  font-famimly: @label-font;
+  overflow: hidden; 
+  color: @label-color; 
+  cursor: pointer; 
+  background: @label-background; 
+  margin:6px 0px 0px 0px; 
+	padding: 5px 20px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 30px ;
+  line-height: 33px ;
+	font-size: @label-size;
+}
+.ac-container label:hover{
+	background: @label-background-hover;
+  color: @label-color-hover;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+	background: @label-background-hover;
+	color: @label-color-hover;
+  margin: 6px 0px 0px 0px;
+  font-size: 19px;
+  padding: 5px 20px;
+  font-weight: 400;
+}
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 13px;
+	top: 7px;
+	background: transparent url(https://tympanus.net/Tutorials/CSS3Accordion/images/arrow_down.png) no-repeat center center;	
+}
+.ac-container input:checked + label:hover:after{
+	background-image: url(https://tympanus.net/Tutorials/CSS3Accordion/images/arrow_up.png);
+}
+.ac-container input{
+	display: none;
+}
+.ac-container article{
+	background: @content-background;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.ac-container article p{
+  margin: 3px;
+  padding: 10px;
+	display: block;
+}
+.ac-container input:checked ~ article{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+}
+.ac-container input:checked ~ article.ac-short{
+	height: 140px;
+}
+.ac-container input:checked ~ article.ac-tall{
+	height: 250px;
+}
+.ac-container input:checked ~ article.ac-grande{
+	height: 500px;
+}
