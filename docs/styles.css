@@ -1,38 +1,43 @@
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+button.accordion {
+  width: 100%;
+  background-color: whitesmoke;
   border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #444;
   cursor: pointer;
+  transition: background-color 0.2s linear;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+button.accordion:after {
+  content: '\f055';
+  font-family: "fontawesome";
+  font-size: 14px;
+  float: right;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+button.accordion.is-open:after {
+  content: '\f056';
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+button.accordion:hover, button.accordion.is-open {
+  background-color: #ddd;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.accordion-content {
+  background-color: white;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
 }
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
