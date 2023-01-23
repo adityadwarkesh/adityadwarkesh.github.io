@@ -5,6 +5,11 @@
   font-size: 20px;
   border: none;
   width: 900px;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
 }
 
 .dropdown {
@@ -32,9 +37,3 @@
 
 
 .dropdown-content a:hover {background-color: #ddd;}
-
-
-.dropdown:hover .dropdown-content {display: block;}
-
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
