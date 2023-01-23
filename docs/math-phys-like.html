@@ -1,60 +1,87 @@
 ---
 layout: default
 ---
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pure CSS Vertical Menu</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet"
+		href=
+"https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+	<style>
+		.pure-menu-heading {
+			color: #308d46;
+		}
+
+		.custom-display {
+			/* To limit the menu width to
+			the content of the menu: */
+			display: inline-block;
+		}
+	</style>
+</head>
 
 <body>
-  <div id="content">      
-    <h2>Vertical Accordion</h2>
-    <section class="ac-container">
-      <div>
-      <input id="about" name="ac" type="checkbox" />
-        <label for="about">About Us</label>
-        <article class="ac-tall">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi.
-          </p>
-        </article>
-      </div>
-        <div>
-          <input id="services" name="ac" type="checkbox"/>
-          <label for="services">Services</label>
-          <article class="ac-tall">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.
-          </p>
-          </article>
-      </div>
-      <div>
-      <input id="blog" name="ac" type="checkbox"/>
-      <label for="blog">Blog</label>
-      <article class="ac-grande">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.<br><br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.
-          </p>
-      </article>
-    </div>
-      <div>
-      <input id="portfolio" name="ac" type="checkbox"/>
-      <label for="portfolio">Portfolio</label>
-      <article class="ac-tall">
-            <p>       
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.
-          </p>
-      </article>
-    </div>
-      <div>
-      <input id="contact" name="ac" type="checkbox"/>
-      <label for="contact">Contact</label>
-      <article class="ac-short">
-            <p> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada.
-          </p>
-      </article>
-    </div>
-    <div><!--...--></div>
-    </section>
-  </div>    
+	<div class=" pure-menu custom-display">
+		<ul class="pure-menu-list">
+			<li class="pure-menu-heading">
+				GeeksforGeeks
+			</li>
+
+
+			<li class="pure-menu-item
+					pure-menu-has-children
+					pure-menu-allow-hover">
+				<a href="#"
+				class="pure-menu-link">
+					Tutorials
+				</a>
+
+				<ul class="pure-menu-children">
+					<li class="pure-menu-item">
+						<a href="#"
+						class="pure-menu-link">
+							Data Structures and Algorithms
+						</a>
+					</li>
+					<li class="pure-menu-item">
+						<a href="#"
+						class="pure-menu-link">
+							GATE 2022
+						</a>
+					</li>
+					<li class="pure-menu-item">
+						<a href="#"
+						class="pure-menu-link">
+							Practice
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="pure-menu-item">
+				<a href="#"
+				class="pure-menu-link">
+					Students
+				</a>
+			</li>
+			<li class="pure-menu-item">
+				<a href="#"
+				class="pure-menu-link">
+					Jobs
+				</a>
+			</li>
+			<li class="pure-menu-item">
+				<a href="#"
+				class="pure-menu-link">
+					Courses
+				</a>
+			</li>
+
+		</ul>
+	</div>
 </body>
 
+</html>
