@@ -22,7 +22,7 @@ repository: adityadwarkesh/adityadwarkesh.github.io
 github: [metadata]
 title: Aditya Dwarkesh
 email: aditya.dwarkesh@gmail.com
-description: "My website."
+description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adityadwarkesh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
