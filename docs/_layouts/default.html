@@ -13,11 +13,17 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     {% include head-custom.html %}
   </head>
+  <style>
+  a:link {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+   }
+  </style>
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <a href="https://adityadwarkesh.github.io"><h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1></a>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
      
       <a href="https://adityadwarkesh.github.io/math-phys-like.html" class="btn">Mathematics, Physics, & The Like</a>
